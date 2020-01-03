@@ -1,9 +1,11 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new List',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
+    handleChange: 'Change',
     defaultText: 'Add new item',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
