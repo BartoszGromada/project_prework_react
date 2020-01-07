@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Card.scss';
+import PropTypes from 'prop-types';
 
 class Card extends React.Component {
 
@@ -9,9 +9,10 @@ class Card extends React.Component {
     title: PropTypes.node.isRequired,
   }
   render() {
+    const {title} = this.props;
     return (
       <section className={styles.component}>
-        <h4>{this.props.title}</h4>
+        <h4>{title}</h4>
       </section>
     );
   }
