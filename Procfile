@@ -1,1 +1,1 @@
-web: npm run serverpackage.json
+web: npm run server package.json
