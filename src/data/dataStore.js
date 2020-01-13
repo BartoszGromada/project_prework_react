@@ -12,6 +12,21 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  menu: {
+    icon: 'rocket',
+    toNothing: '/',
+    toInfo: '/info',
+    toFAQ: '/faq',
+    classNameActive: 'active',
+  },
+  FAQ: {
+    title: 'FAQ',
+    image: 'http://www.apator.com/uploads/gallery/1742/faq_0452514.jpg',
+  },
+  info: {
+    title: 'INFO',
+    image: 'http://mckplonsk.pl/wp-content/uploads/2015/11/Info.jpg',
+  },
 };
 
 export const pageContents = {

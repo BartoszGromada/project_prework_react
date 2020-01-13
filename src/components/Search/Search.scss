@@ -5,12 +5,16 @@
   display: flex;
 
   input {
-    // flex-grow: 1;
+    //flex-grow: 1;
     background: $color-light;
     border: 1px solid lighten($color-dark, 60%);
     padding: $base-size ($base-size * 1.5);
     margin: 0 0 $base-size 0;
     font-family: $font-text;
     border-radius: $radius;
+  }
+
+  .buttons {
+    display: inline-block;
   }
 }
