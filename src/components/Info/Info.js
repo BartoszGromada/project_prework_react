@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import PropTypes from 'prop-types';
 import {settings} from '../../data/dataStore';

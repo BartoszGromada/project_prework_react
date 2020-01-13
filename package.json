@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "lint": "eslint src/",
+    "lint": "eslint . --fix src/",
     "server": "http-server dist"
   },
   "husky": {
@@ -15,7 +15,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": "eslint"
+    "src/**/*.js": "eslint . --fix"
   },
   "keywords": [],
   "author": "",

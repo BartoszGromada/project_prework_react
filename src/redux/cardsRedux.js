@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import shortid from 'shortid';
 
 // selectors

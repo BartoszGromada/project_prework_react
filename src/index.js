@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import './styles/normalize.scss';
 import './styles/global.scss';

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import {connect} from 'react-redux';
 import Column from './Column.js';
 import {getCardsForColumn, createActionAddCard} from './../../redux/cardsRedux.js';

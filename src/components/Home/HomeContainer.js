@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import {connect} from 'react-redux';
 import Home from './Home.js';
 

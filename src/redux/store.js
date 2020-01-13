@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import {combineReducers, createStore} from 'redux';
 import initialStoreData from '../data/dataStore.js';
 import columnsReducer from './columnsRedux.js';
