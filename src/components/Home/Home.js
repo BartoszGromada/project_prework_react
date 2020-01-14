@@ -10,7 +10,7 @@ class Home extends React.Component {
     title: PropTypes.node,
     subtitle: PropTypes.node,
     lists: PropTypes.array,
-    addList: PropTypes.func
+    addList: PropTypes.func,
   }
   render() {
     const {title, subtitle, lists, addList} = this.props;
