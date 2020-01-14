@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 
 class Card extends React.Component {
 
@@ -12,7 +13,7 @@ class Card extends React.Component {
     const {title} = this.props;
     return (
       <section className={styles.component}>
-        <h4>{title}</h4>
+        <h4>{ReactHtmlParser(title)}</h4>
       </section>
     );
   }

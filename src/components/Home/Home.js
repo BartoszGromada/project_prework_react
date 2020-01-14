@@ -2,15 +2,18 @@ import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
 import ListLink from '../ListLink/ListLink.js';
+import Creator from '../Creator/Creator.js';
+import { settings } from '../../data/dataStore';
 
 class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
     subtitle: PropTypes.node,
     lists: PropTypes.array,
+    addList: PropTypes.func
   }
   render() {
-    const {title, subtitle, lists} = this.props;
+    const {title, subtitle, lists, addList} = this.props;
     return (
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
@@ -19,6 +22,9 @@ class Home extends React.Component {
           {lists.map(listData => (
             <ListLink key={listData.id} {...listData} />
           ))}
+        </div>
+        <div className={styles.creator}>
+          <Creator text={settings.listCreatorText} action={addList}/>
         </div>
       </main>
     );

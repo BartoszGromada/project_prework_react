@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -30,6 +31,7 @@ export const settings = {
 };
 
 export const pageContents = {
+  id: 'home-1',
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
@@ -97,13 +99,13 @@ const lists = [
   {
     id: 'list-2',
     title: 'Things to do <sup>later!</sup>',
-    description: 'Interesting House chores',
+    description: '"Interesting" House task',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
     id: 'list-3',
     title: 'Things to do <sup>every day</sup>',
-    description: 'Boring home shopping',
+    description: 'Boring shopping',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
