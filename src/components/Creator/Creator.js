@@ -51,6 +51,7 @@ class Creator extends React.Component {
           placeholder={this.props.text}
           value={this.state.value}
           onChange={this.handleChange}
+          columnId={this.state.columnId}
         />
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
           <Button onClick={this.handleOK}>OK</Button>

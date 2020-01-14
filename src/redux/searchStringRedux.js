@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 
 // selectors
 export const getSearchString = ({ searchString }) => searchString;

@@ -11,7 +11,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 export const ADD_COLUMN = createActionName('ADD_COLUMN');
 
 // action creators
-export const createActionAddColumn = payload => ({ payload: { ...payload, id: shortid.generate() }, type: ADD_COLUMN });
+export const createActionAddColumn = payload => ({ payload: { ...payload, id: `column-${shortid.generate()}`}, type: ADD_COLUMN });
 
 // reducer
 export default function reducer(state = [], action = {}) {

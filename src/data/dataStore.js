@@ -21,11 +21,11 @@ export const settings = {
   },
   FAQ: {
     title: 'FAQ',
-    image: 'http://www.apator.com/uploads/gallery/1742/faq_0452514.jpg',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   info: {
     title: 'INFO',
-    image: 'http://mckplonsk.pl/wp-content/uploads/2015/11/Info.jpg',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 };
 
@@ -94,6 +94,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'Interesting House chores',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do <sup>every day</sup>',
+    description: 'Boring home shopping',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
@@ -127,31 +139,37 @@ const cards = [
   {
     id: 'card-1',
     columnId: 'column-1',
+    listId: 'list-1',
     title: 'This Is Going to Hurt',
   },
   {
     id: 'card-2',
     columnId: 'column-1',
+    listId: 'list-1',
     title: 'Interpreter of Maladies',
   },
   {
     id: 'card-3',
     columnId: 'column-2',
+    listId: 'list-1',
     title: 'Harry Potter',
   },
   {
     id: 'card-4',
     columnId: 'column-2',
+    listId: 'list-1',
     title: 'Star Wars',
   },
   {
     id: 'card-5',
     columnId: 'column-3',
+    listId: 'list-1',
     title: 'The Witcher',
   },
   {
     id: 'card-6',
     columnId: 'column-3',
+    listId: 'list-1',
     title: 'Skyrim',
   },
 ];

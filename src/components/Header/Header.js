@@ -5,6 +5,7 @@ import {settings} from '../../data/dataStore';
 import PropTypes from 'prop-types';
 import Container from '../Container/Container.js';
 import Icon from '../Icons/Icon';
+import Search from '../Search/Search';
 
 class Header extends React.Component {
   static propTypes = {
@@ -35,6 +36,7 @@ class Header extends React.Component {
               <NavLink exact to={toInfo} activeClassName={classNameActive}>Info</NavLink>
               <NavLink exact to={toFAQ} activeClassName={classNameActive}>FAQ</NavLink>
             </nav>
+            <Search/>
           </div>
         </Container>
       </header>

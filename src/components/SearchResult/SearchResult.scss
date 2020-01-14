@@ -1,0 +1,39 @@
+@import '../../styles/settings.scss';
+
+.component {
+  flex-shrink: 0;
+  width: 70%;
+  background: $color-light;
+  margin: 30px auto;
+  padding: ($base-size * 1.5);
+  border-radius: $radius;
+  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  color: $color-dark;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  padding: ($base-size / 2);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  color: $color-warning;
+  &:hover {
+    color: $color-success;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    width: 90%;
+    margin: 0 0 $base-size 0;
+  }
+
+}
