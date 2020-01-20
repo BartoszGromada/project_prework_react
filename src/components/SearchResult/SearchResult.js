@@ -21,7 +21,7 @@ class SearchResult extends React.Component {
             <div key={cardData.id} className={styles.wrapper}>
               <Card key={cardData.id} {...cardData} />
               <Link className={styles.link} to={`/list/${cardData.listId}`}>
-                <p>{`Column: ${cardData.columnId}, List: ${cardData.listId}`}</p>
+                <p>{`Column: ${cardData.columnid}, List: ${cardData.listId}`}</p>
               </Link>
             </div>
           ))}

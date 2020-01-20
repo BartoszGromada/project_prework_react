@@ -24,7 +24,7 @@ class Home extends React.Component {
           ))}
         </div>
         <div className={styles.creator}>
-          <Creator text={settings.listCreatorText} action={addList}/>
+          <Creator text={settings.creator.listText} action={addList}/>
         </div>
       </main>
     );

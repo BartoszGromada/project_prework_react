@@ -1,11 +1,11 @@
 export const settings = {
-  columnCreatorText: 'Add new column',
-  cardCreatorText: 'Add new card',
-  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
-    defaultText: 'Add new item',
+    buttonChange: 'Change',
+    columnText: 'Add new column',
+    cardText: 'Add new card',
+    listText: 'Add new list',
   },
   search: {
     defaultText: 'Search...',
@@ -37,9 +37,6 @@ export const pageContents = {
 };
 
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
     {
       key: 0,
@@ -140,37 +137,37 @@ const columns = [
 const cards = [
   {
     id: 'card-1',
-    columnId: 'column-1',
+    columnid: 'column-1',
     listId: 'list-1',
     title: 'This Is Going to Hurt',
   },
   {
     id: 'card-2',
-    columnId: 'column-1',
+    columnid: 'column-1',
     listId: 'list-1',
     title: 'Interpreter of Maladies',
   },
   {
     id: 'card-3',
-    columnId: 'column-2',
+    columnid: 'column-2',
     listId: 'list-1',
     title: 'Harry Potter',
   },
   {
     id: 'card-4',
-    columnId: 'column-2',
+    columnid: 'column-2',
     listId: 'list-1',
     title: 'Star Wars',
   },
   {
     id: 'card-5',
-    columnId: 'column-3',
+    columnid: 'column-3',
     listId: 'list-1',
     title: 'The Witcher',
   },
   {
     id: 'card-6',
-    columnId: 'column-3',
+    columnid: 'column-3',
     listId: 'list-1',
     title: 'Skyrim',
   },
