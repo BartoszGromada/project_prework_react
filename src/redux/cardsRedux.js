@@ -2,10 +2,11 @@ import shortid from 'shortid';
 
 // selectors
 export const getCardsForColumn = ({cards}, columnid) => cards.filter(card => card.columnid == columnid);
-export const getSearchCardsForColumn = ({ cards, columns, lists }, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).map(card => ({
+export const getSearchCardsForColumn = ({ cards, columns }, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).map(card => ({
   ...card,
   columnName: columns.find(col => col.id === card.columnId).title,
-}));
+}),
+);
 
 
 // action name creator
