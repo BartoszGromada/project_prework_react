@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import SearchResult from './SearchResult';
-import { getSearchCardsForColumn } from '../../redux/cardsRedux';
-import { getSearchColumnsForList } from '../../redux/columnsRedux';
+import { getSearchCardsForColumn} from '../../redux/cardsRedux';
+import { getSearchColumnsForList} from '../../redux/columnsRedux';
 import { getSearchListsforHome } from '../../redux/listsRedux';
 
 const mapStateToProps = (state, props) => {
