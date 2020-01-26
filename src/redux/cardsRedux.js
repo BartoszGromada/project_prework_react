@@ -5,7 +5,7 @@ export const getCardsForColumn = ({cards}, columnid) => cards.filter(card => car
 export const getSearchCardsForColumn = ({ cards, columns, lists} , searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).map(card => ({
   ...card,
   columnName: columns.find(col => col.id === card.columnid).title,
-  listName: lists.find(list => list.id === card.listId).title
+  listName: lists.find(list => list.id === card.listId).title,
 }));
 export const countAllCards = ({ cards }) => cards.length;
 
