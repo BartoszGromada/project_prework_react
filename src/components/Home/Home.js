@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ListLink from '../ListLink/ListLink.js';
 import {settings} from '../../data/dataStore';
 import Creator from '../Creator/Creator.js';
+
 class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
