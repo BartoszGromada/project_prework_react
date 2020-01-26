@@ -3,6 +3,7 @@ import styles from './SearchResult.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import {Link} from 'react-router-dom';
+import ReactHtmlParser from 'react-html-parser';
 
 
 class SearchResult extends React.Component {
@@ -21,7 +22,7 @@ class SearchResult extends React.Component {
             <div key={cardData.id} className={styles.wrapper}>
               <Card key={cardData.id} {...cardData} />
               <Link className={styles.link} to={`/list/${cardData.listId}`}>
-                <p>{`Column: ${cardData.columnid}, List: ${cardData.listId}`}</p>
+                <p>{ReactHtmlParser(`Column: ${cardData.columnName}, List: ${cardData.listName}`)}</p>
               </Link>
             </div>
           ))}
@@ -32,7 +33,7 @@ class SearchResult extends React.Component {
             <div key={columnData.id} className={styles.wrapper}>
               <Card key={columnData.id} {...columnData} />
               <Link className={styles.link} to={`/list/${columnData.listId}`}>
-                <p>{`Column: ${columnData.id}, List: ${columnData.listId}`}</p>
+                <p>{ReactHtmlParser(`Column: ${columnData.title}, List: ${columnData.listName}`)}</p>
               </Link>
             </div>
           ))}
@@ -42,8 +43,8 @@ class SearchResult extends React.Component {
           {lists.map(listData => (
             <div key={listData.id} className={styles.wrapper}>
               <Card key={listData.id} {...listData} />
-              <Link className={styles.link} to={`/list/${listData.listId}`}>
-                <p>{`List: ${listData.id}`}</p>
+              <Link className={styles.link} to={`/list/${listData.id}`}>
+                <p>{ReactHtmlParser(`List: ${listData.title}`)}</p>
               </Link>
             </div>
           ))}
