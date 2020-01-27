@@ -5,7 +5,6 @@ import {createActionAddList, getListsforHome } from '../../redux/listsRedux.js';
 
 const mapStateToProps = (state, props) => {
   const id = props.match.params.id;
-  console.log(id);
   const title = state.app.title;
   const subtitle = state.app.subtitle;
   const lists = state.lists;
